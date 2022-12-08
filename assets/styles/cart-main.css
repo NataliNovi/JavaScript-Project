@@ -1,0 +1,254 @@
+#logo {
+    position: relative;
+    cursor: pointer;
+    left: -10px;
+    transition: left 5s ease-out;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 300px 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+.block_items {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 220px 450px 220px 100px;
+    row-gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.block_picture {
+    align-self:baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* добавить оформление */
+.block_pack {
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.fonts-add {
+    font-size: 15px;
+    color: rgb(2, 101, 106);
+}
+
+/* кнопки перехода на другие страницы */
+.block_submit {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.block_submit_align {
+    display: grid;
+    gap: 50px;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+}
+
+/* блок вывода суммы заказа */
+.block_submit_total {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.block_total_align {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* текст */
+.fonts {
+    font-size: larger;
+    color: rgb(2, 101, 106);
+    margin-left: 15px;
+}
+
+.block_more-gap {
+    margin-left: 25px;
+}
+
+.block_submit_button {
+    width: 300px;
+    height: 40px;
+    font-family: inherit;
+    font-size: 1rem;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #0093A2;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.block_submit_button:hover {
+    background: #017b89;
+}
+
+.block_submit_button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+/*  выбор картинки  */
+.active {
+    box-shadow: 0 0 10px grey;
+}
+
+/* оформление + подарок */
+.decoration {
+    display: grid;
+    grid-template-rows: 270px;
+    grid-template-columns: 650px 300px;
+    justify-items: start;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.add_decor {
+    display: flex;
+    flex-direction: column;
+    
+}
+.add_decor_out {
+    margin-left: 15px;
+}
+
+/* вывод картинок подарков */
+.add-image-out {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.item-descript {
+    color: #0093A2;
+    font-weight: bold;
+}
+
+/* стоимость заказа */
+#total-out {
+    min-height: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px dotted blue;
+}
+
+.delete_button {
+    min-width: 80px;
+    height: 35px;
+    font-family: inherit;
+    font-size: 1rem;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #f47da1;
+    color: rgb(243, 220, 206);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.delete_button:hover {
+    background: #FF3672;
+}
+
+/* кнопка заказа */
+.order_button {
+    min-width: 80px;
+    height: 35px;
+    font-family: inherit;
+    font-size: 1rem;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #ff3672;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.order_button:hover {
+    background: #017b89;
+}
+
+.add-decore-value {
+    text-align: center;
+}
+.add-image-out{
+    cursor: pointer;
+}
+
+
+/* customized checkbox */
+.add-out {
+    position:relative;
+    opacity: 0;
+}
+.add-out + label {
+    position: relative;
+    padding: 0 0 0 70px;
+    cursor: pointer;
+}
+.add-out + label::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    width: 36px;
+    height: 16px;
+    border-radius: 13px;
+    background: #cdd1da;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.4);
+    transition: .2s;
+}
+/* шарик */
+.add-out + label::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 22px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #cdd1da;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.4);
+    transition: .2s;
+}
+.add-out:checked + label::after{
+    left: 42px;
+}
+.add-out:checked + label::before{
+    /*background: rgb(247, 63, 149);*/
+    background: rgb(246, 167, 119);
+}
+#misc:checked + label::before{
+    /*background: rgb(247, 63, 149);*/
+    background: rgb(246, 167, 119);
+}    

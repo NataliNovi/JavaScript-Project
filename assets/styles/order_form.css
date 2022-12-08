@@ -1,0 +1,377 @@
+body {
+    background-color: rgb(243, 220, 206);
+}
+
+.h {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+form {
+    color: black;
+    font-family: "Prata", normal;
+    font-size: larger;
+    border: 1px solid #ff3672;
+    border-radius: 5px;
+    width: 60vw;
+    padding: 3em 5em;
+    margin: 3em auto;
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "left right"
+        "bottom bottom";
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+
+}
+
+#order-form_grid_1 {
+    grid-area: top;
+
+}
+
+#order-form_grid_2 {
+    grid-area: left;
+    font-size: x-large;
+}
+
+#order-form_grid_3 {
+    grid-area: right;
+    font-size: x-large;
+}
+
+#order-form_grid_4 {
+    grid-area: bottom;    
+    font-size: x-large;
+}
+
+.div_address {
+    display: flex;
+    width: 25.85vw;
+}
+
+.input_address{
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.order-form_div-with-error {
+    color: red;
+    margin-bottom: 1.5em;
+    width: 25vw;
+    height: 0.5vw;
+    font-size: smaller;
+}
+
+.order-div_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block_submit {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.block_submit_align {
+    display: grid;
+    gap: 50px;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+}
+
+
+/*Стили кнопок оформления начало*/
+.input_order-form {
+    width: 50%;
+    height: 56px;
+    background-color: #ff3672;
+    color: white;
+    border-radius: 6px;
+    border: 0px;
+    position: relative;
+    font-family: "Roboto", normal, sans-serif;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.input_order-form:hover {
+    border: 4px solid #0093a2;
+}
+
+.input_order-form:active {
+    bottom: -2px;
+}
+
+.block_submit_button {
+    width: 300px;
+    height: 40px;
+    font-family: inherit;
+    font-size: 1rem;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #0093A2;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.block_submit_button:hover {
+    background: #017b89;
+}
+
+.block_submit_button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+/*Стили кнопки оформления конец*/
+
+/*Стили инпутов начало*/
+input {
+    text-indent: 5px;
+    font-family: inherit;
+    border: 2px solid black;
+    width: 25vw;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+input:hover {
+    border-color: #ff3672;
+}
+
+input:focus {
+    border-color: #ff3672;
+    outline: 0;
+}
+
+.div_comment{
+    margin-top: 10px;
+}
+
+#textarea_comment {
+    resize: none;
+    overflow: auto;
+    text-indent: 5px;
+    width: 25vw;
+    height: 17vh;
+    font-family: inherit;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#textarea_comment:hover {
+    border-color: #ff3672;
+}
+
+#textarea_comment:focus {
+    border-color: #ff3672;
+    outline: 0;
+}
+
+.div_block-payment{
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+}
+
+.block-with-radio_payment {
+    margin: auto;
+    width: 100%;
+}
+
+.radio_payment {
+    width: 2vw;
+}
+
+/*Стили инпутов конец*/
+
+/*Медиазапросы начало*/
+@media screen and (max-width: 576px) {
+    form {
+        font-size: large;
+        border: none;
+        width: 100vw;
+        padding: 2em 0;
+        grid-template-areas:
+            "top "
+            "left "
+            "right"
+            "bottom ";
+        grid-row-gap: 25px;
+    }
+
+    #textarea_comment {
+        resize: none;
+        overflow: auto;
+        text-indent: 5px;
+        width: 65vw;
+        height: 120px;
+        font-family: inherit;
+        border: 2px solid black;
+    }
+
+    input {
+        width: 65vw;
+        height: 30px;
+        text-indent: 3px;
+        border: 1px solid black;
+    }
+
+    .block-with-radio_payment {
+        margin: 1em auto;
+        width: 65vw;
+    }
+
+    .radio_payment {
+        width: 5vw;
+        height: 18px;
+    }
+
+    #input_order-form {
+        width: 80%;
+        height: 57px;
+        background-color: #ff3672;
+        color: white;
+        border-radius: 6px;
+        border: 0px;
+        position: relative;
+        font-family: "Roboto", normal, sans-serif;
+        font-size: 18px;
+    }
+
+    .div_address {
+        display: flex;
+        width: 60vw;
+    }
+
+    .order-form_div-with-error {
+        width: 65vw;
+        margin: 1.5em auto;
+    }
+
+    .block_submit {
+        grid-template-rows: 50px;
+        grid-template-columns: 1fr;
+        height: 110px;
+
+    }
+
+
+    .block_submit_align {
+        gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+
+    .block_submit_button {
+        width: 80%;
+        height: 47px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1199px) {
+    form {
+        font-size: larger;
+        border: none;
+        width: 80vw;
+        padding: 2em 2em;
+        grid-template-areas:
+            "top "
+            "left "
+            "right"
+            "bottom ";
+        grid-row-gap: 25px;
+    }
+
+    #textarea_comment {
+        resize: none;
+        overflow: auto;
+        text-indent: 5px;
+        width: 55vw;
+        height: 160px;
+        font-family: inherit;
+        border: 2px solid black;
+    }
+
+    input {
+        width: 55vw;
+        height: 30px;
+        text-indent: 3px;
+        border: 1px solid black;
+    }
+
+    .div_block-payment{
+        width: 55vw;
+    }
+
+    .div_address {
+        display: flex;
+        width: 55vw;
+    }
+
+    .radio_payment {
+        width: 5vw;
+        height: 18px;
+    }
+
+    #input_order-form {
+        width: 80%;
+        height: 57px;
+        background-color: #ff3672;
+        color: white;
+        border-radius: 6px;
+        border: 0px;
+        position: relative;
+        font-family: "Roboto", normal, sans-serif;
+        font-size: 18px;
+    }
+
+    .order-form_div-with-error {
+        width: 55vw;
+        margin: 2em auto;
+    }
+
+    .block_submit {
+        grid-template-rows: 50px;
+        grid-template-columns: 1fr;
+        height: 110px;
+
+    }
+
+
+    .block_submit_align {
+        gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+
+    .block_submit_button {
+        width: 66%;
+        height: 47px;
+        margin: auto;
+        padding: 0;
+    }
+}

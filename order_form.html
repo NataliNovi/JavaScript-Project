@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа</title>
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+  <link rel="stylesheet" href="./assets/styles/order_form.css">
+  <link rel="stylesheet" href="./assets/styles/index.css">
+
+</head>
+
+<body>
+  <!--блок-хедер START-->
+  <header class="header" id="top">
+    <div class="anime_container">
+      <div class="animate seven"><a href="index.html" style="color:#0093a2">
+        <span>&#10048;</span><span>&nbsp;</span><span>F</span><span>l</span><span>o</span><span>w</span><span>e</span><span>r</span><span>s</span>
+        &nbsp;
+        <span>f</span><span>o</span><span>r</span> &nbsp;
+        <span>e</span><span>v</span><span>e</span><span>r</span><span>y</span><span>o</span><span>n</span><span>e</span>
+      </a></div>
+    </div>
+
+    <!--<p class="header__phrase">Букеты на любой вкус</p>-->
+
+    <div class="header__items">
+
+      <a class="header__item_delivery" href="order_form.html">Доставка</a>
+      <a class="header__item_payment" href="cart-main.html">Оплата</a>
+      <a class="header__item_contact" href="index.html#bottom">Контакты</a>
+      <a class="header__item_basket" id="to-basket" href="cart-main.html">Корзина
+        <img class="header__item_logo-basket" src="assets/images/basket.png" alt="logo" /></a>
+    </div>
+
+    </div>
+  </header>
+  <!--блок-хедер END-->
+
+  <form class="form_order-form">
+    <div id="order-form_grid_1">
+      <h2 class="h">Оформление заказа</h2>
+    </div>
+
+    <div id="order-form_grid_2">
+      <div class="order-div_block">
+        <label for="input_name">Имя:<span class="red">*</span></label>
+        <input id="input_name" type="text" placeholder="Введите ваше имя">
+        <div class="order-form_div-with-error"></div>
+      </div>
+
+      <div class="order-div_block">
+        <label for="input_tel">Телефон:<span class="red">*</span></label>
+        <input id="input_tel" type="tel" placeholder="Введите ваш телефон">
+        <div class="order-form_div-with-error"></div>
+      </div>
+
+      <div class="order-div_block">
+        <label for="input_email">Email:<span class="red">*</span></label>
+        <input id="input_email" type="email" placeholder="Введите ваш email">
+        <div class="order-form_div-with-error"></div>
+      </div>
+
+      <div class="order-div_block">
+        <label for="input_street">Адрес:<span class=" red">*</span></label>
+        <input id="input_street" type="text" placeholder="Улица">
+        <div class = "div_address">
+          <input id="input_houseNumber" class="input_address" type="text" placeholder="Дом">
+          <input id="input_building" class="input_address" type="text" placeholder="Корпус">
+          <input id="input_apartmentNumber" class="input_address" type="text" placeholder="Квартира">
+        </div>
+        <div class="order-form_div-with-error"></div>
+      </div>
+    </div>
+
+    <div id="order-form_grid_3">
+      <div class="order-div_block">
+        <p>Способ оплаты:<span class="red">*</span></p>
+        <div class="div_block-payment">
+          <span class="block-with-radio_payment"><input id="bankCard" class="radio_payment" type="radio" name="payment"
+              value="1"> Банковская
+            карта</span>
+          <span class="block-with-radio_payment"><input id="cash" class="radio_payment" type="radio" name="payment"
+              value="2"> Наличный расчет</span>
+        </div>
+        <div class="order-form_div-with-error"></div>
+      </div>
+
+      <div class="div_comment">
+        <label for="textarea_comment">Комментарий к заказу:</label>
+        <p><textarea id="textarea_comment" placeholder="Есть ли комментарии к заказу?"></textarea></p>
+      </div>
+    </div>
+
+    <div id="order-form_grid_4">
+      <div>
+        <input id="input_order-form" class="input_order-form" type="button" value="Оформить заказ">
+      </div>
+    </div>
+
+  </form>
+
+  <div class="block_submit">
+    <div class="block_submit_align">
+      <button type="button" id="to-main-page" class="block_submit_button"> Вернуться в
+        каталог</button>
+      <button type="button" id="to-cart-page" class="block_submit_button">Вернуться в корзину
+      </button>
+    </div>
+  </div>
+
+  <!--блок-футер START-->
+  <footer>
+    <div class="footer" id="end">
+      <div class="footer__logo">
+        <div><img class="footer__logo_img" src="assets/images/logobutterfly.png" alt="logo" /> </div>
+        <div class="footer__logo-name"><a href="index.html" style="color:#0093a2">Flowers for everyone</a></div>
+
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu_name "><a href="index.html" style="color:#0093a2">Меню</a></div><br>
+        <div class="footer__menu_buketi"><a href="index.html" style="color:black">Букеты</a></div>
+        <div class="footer__menu_korzini"><a href="index.html" style="color:black">Корзины с цветами</a></div>
+        <div class="footer__menu_rosi"><a href="index.html" style="color:black">Розы</a></div>
+        <div class="footer__menu_oplata"><a href="cart-main.html" style="color:black">Оплата</a></div>
+        <div class="footer__menu_dostavka"><a href="order_form.html" style="color:black">Доставка</a></div>
+
+      </div>
+
+
+      <div class="footer__contact">
+        <div class="footer__contact_name" href="#contact" style="color:#0093a2">Контакты</div><br>
+        <div class="footer__contact_adres">Адрес:г.Прага,ул.Центральная,64</div>
+        <div class="footer__contact_time">Время работы: пн.-вс. с 9.00 до 18.00</div> <br>
+        <div class="footer__contact_tel">Телефон:+42 5845050</div>
+        <div class="footer__contact_email">email:flowershop@gmail.com</div>
+
+      </div>
+
+
+      <div class="footer__social">
+        <div class="footer__social_tofind" style="color:#0093a2">Можете нас найти</div><br>
+        <div> <img class="footer__social-img" src="assets/images/iconinstagram.png" alt="logo" />
+          <img class="footer__social-img" src="assets/images/iconfacebook.png" alt="logo" />
+          <img class="footer__social-img" src="assets/images/iconswhatsapp.png" alt="logo" />
+          <img class="footer__social-img" src="assets/images/iconviber.png" alt="logo" /> </div><br>
+        <div class="footer__copyright"> Copyright &copy; 2022 Flower Shop - All rights reserved</div>
+      </div>
+
+      <div class="footer__v-korzinu"><a href="cart-main.html" style="color:#0093a2"> Перейти в корзину</a></div>
+    </div>
+  </footer>
+  <!--блок-футер END-->
+
+  <script src="assets/order_form.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js">
+  </script>
+</body>
+
+</html>
