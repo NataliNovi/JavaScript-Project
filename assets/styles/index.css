@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 *:before,
 *:after {
   padding: 0;
@@ -13,26 +14,28 @@
   font-weight: 400;
   src: local(""), url("../../fonts/Prata-Regular.ttf") format("ttf");
 }
+
 @font-face {
   font-family: "Pacifico-Regular";
   font-style: cursive;
   font-weight: 400;
   src: local(""), url("../../fonts/Pacifico.ttf") format("ttf");
 }
+
 @font-face {
   font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../../fonts/Roboto-Regular.ttf") format("ttf");
 }
+
 @font-face {
   font-family: "Caveat", cursive;
   font-style: normal;
   font-weight: 500;
   src: local(""), url("../../fonts/Caveat.ttf") format("ttf");
 }
-/*Переменные для всего проекта*/
-/* Классы и стили, общие для всего проекта */
+
 * html,
 body {
   height: 100%;
@@ -74,6 +77,7 @@ footer {
   margin-left: 30px;
   margin-top: 5px;
 }
+
 @media screen and (max-width: 576px) {
   .animate {
     font-size: 24px;
@@ -81,6 +85,7 @@ footer {
     margin-top: 50px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .animate {
     font-size: 30px;
@@ -101,97 +106,97 @@ a.repeat:hover {
 
 .animate span:nth-of-type(2) {
   -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  animation-delay: 0.05s;
 }
 
 .animate span:nth-of-type(3) {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .animate span:nth-of-type(4) {
   -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 .animate span:nth-of-type(5) {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .animate span:nth-of-type(6) {
   -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 .animate span:nth-of-type(7) {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .animate span:nth-of-type(8) {
   -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
 
 .animate span:nth-of-type(9) {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .animate span:nth-of-type(10) {
   -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
+  animation-delay: 0.45s;
 }
 
 .animate span:nth-of-type(11) {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .animate span:nth-of-type(12) {
   -webkit-animation-delay: 0.55s;
-          animation-delay: 0.55s;
+  animation-delay: 0.55s;
 }
 
 .animate span:nth-of-type(13) {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .animate span:nth-of-type(14) {
   -webkit-animation-delay: 0.65s;
-          animation-delay: 0.65s;
+  animation-delay: 0.65s;
 }
 
 .animate span:nth-of-type(15) {
   -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .animate span:nth-of-type(16) {
   -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 
 .animate span:nth-of-type(17) {
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .animate span:nth-of-type(18) {
   -webkit-animation-delay: 0.85s;
-          animation-delay: 0.85s;
+  animation-delay: 0.85s;
 }
 
 .animate span:nth-of-type(19) {
   -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 .animate span:nth-of-type(20) {
   -webkit-animation-delay: 0.95s;
-          animation-delay: 0.95s;
+  animation-delay: 0.95s;
 }
 
 .seven span {
@@ -199,7 +204,7 @@ a.repeat:hover {
   opacity: 0;
   transform: translate(-150px, 0) scale(0.3);
   -webkit-animation: leftRight 0.5s forwards;
-          animation: leftRight 0.5s forwards;
+  animation: leftRight 0.5s forwards;
 }
 
 @-webkit-keyframes leftRight {
@@ -208,13 +213,16 @@ a.repeat:hover {
     opacity: 1;
     color: #0093a2;
   }
+
   60% {
     color: #0f40ba;
   }
+
   80% {
     transform: translate(0) scale(2);
     opacity: 0;
   }
+
   100% {
     transform: translate(0) scale(1);
     opacity: 1;
@@ -227,18 +235,22 @@ a.repeat:hover {
     opacity: 1;
     color: #0093a2;
   }
+
   60% {
     color: #0f40ba;
   }
+
   80% {
     transform: translate(0) scale(2);
     opacity: 0;
   }
+
   100% {
     transform: translate(0) scale(1);
     opacity: 1;
   }
 }
+
 /* styles for блок-хедер START*/
 .header {
   width: 100vw;
@@ -254,6 +266,7 @@ a.repeat:hover {
   font-size: large;
   margin-right: 0;
 }
+
 .header__items {
   display: grid;
   width: 100vw;
@@ -267,7 +280,11 @@ a.repeat:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.header__item_delivery, .header__item_payment, .header__item_contact, .header__item_basket {
+
+.header__item_delivery,
+.header__item_payment,
+.header__item_contact,
+.header__item_basket {
   justify-self: center;
   width: 120px;
   color: black;
@@ -278,41 +295,56 @@ a.repeat:hover {
   padding: 10px 15px;
   text-align: center;
 }
-.header__item_delivery:hover, .header__item_payment:hover, .header__item_contact:hover, .header__item_basket:hover {
+
+.header__item_delivery:hover,
+.header__item_payment:hover,
+.header__item_contact:hover,
+.header__item_basket:hover {
   background: rgb(243, 220, 206);
 }
+
 .header__item_basket {
   border: 2px solid rgb(243, 220, 206);
   border-radius: 5px;
   padding: 8px 12px;
 }
+
 .header__item_logo-basket {
   width: 25px;
   height: 20px;
 }
+
 @media screen and (max-width: 768px) {
   .header__items {
     width: 100vw;
     font-size: small;
     justify-self: center;
   }
-  .header__item_delivery, .header__item_payment, .header__item_contact, .header__item_basket {
+
+  .header__item_delivery,
+  .header__item_payment,
+  .header__item_contact,
+  .header__item_basket {
     width: 60%;
   }
+
   .header__item_basket {
     display: flex;
     direction: row;
   }
+
   .header__item_logo-basket {
     width: 19px;
     height: 13px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .header__items {
     width: 100%;
     font-size: small;
   }
+
   .header__item_logo-basket {
     width: 15px;
     height: 10px;
@@ -328,7 +360,11 @@ a.repeat:hover {
   justify-items: center;
   border-radius: 100%;
 }
-.catalog__all-flowers, .catalog__bouquets, .catalog__baskets, .catalog__roses {
+
+.catalog__all-flowers,
+.catalog__bouquets,
+.catalog__baskets,
+.catalog__roses {
   display: flex;
   width: 15vw;
   height: 8vh;
@@ -345,28 +381,47 @@ a.repeat:hover {
   color: black;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1088px) {
-  .catalog__all-flowers, .catalog__bouquets, .catalog__baskets, .catalog__roses {
+
+  .catalog__all-flowers,
+  .catalog__bouquets,
+  .catalog__baskets,
+  .catalog__roses {
     font-size: 17px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .catalog__all-flowers, .catalog__bouquets, .catalog__baskets, .catalog__roses {
+
+  .catalog__all-flowers,
+  .catalog__bouquets,
+  .catalog__baskets,
+  .catalog__roses {
     font-size: 14px;
     width: 18vw;
     height: 8vh;
     margin-left: 17px;
   }
 }
+
 @media screen and (max-width: 576px) {
-  .catalog__all-flowers, .catalog__bouquets, .catalog__baskets, .catalog__roses {
+
+  .catalog__all-flowers,
+  .catalog__bouquets,
+  .catalog__baskets,
+  .catalog__roses {
     font-size: 13px;
     width: 18vw;
     height: 8vh;
     margin-left: 17px;
   }
 }
-.catalog__all-flowers:hover, .catalog__bouquets:hover, .catalog__baskets:hover, .catalog__roses:hover {
+
+.catalog__all-flowers:hover,
+.catalog__bouquets:hover,
+.catalog__baskets:hover,
+.catalog__roses:hover {
   background: #ff3672;
 }
 
@@ -375,6 +430,7 @@ a.repeat:hover {
   width: 50px;
   height: 45px;
 }
+
 @media screen and (max-width: 768px) {
   .button__logo-img {
     margin-left: 5px;
@@ -382,6 +438,7 @@ a.repeat:hover {
     height: 35px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .button__logo-img {
     margin-left: 5px;
@@ -417,6 +474,7 @@ a.repeat:hover {
     z-index: 99999;
   }
 }
+
 @media screen and (max-width: 576px) {
   .scroll-indicator {
     width: 0;
@@ -442,6 +500,7 @@ a.repeat:hover {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
 }
+
 @media screen and (max-width: 768px) {
   #flowersContainer {
     width: 100vw;
@@ -450,6 +509,7 @@ a.repeat:hover {
     margin-left: 17px;
   }
 }
+
 @media screen and (max-width: 576px) {
   #flowersContainer {
     width: 100vw;
@@ -493,6 +553,7 @@ a.repeat:hover {
   position: relative;
   font-family: "Roboto", normal, sans-serif;
 }
+
 @media screen and (max-width: 768px) {
   .flowers_card {
     margin-bottom: 20px;
@@ -500,6 +561,7 @@ a.repeat:hover {
     width: 23vw;
   }
 }
+
 @media screen and (max-width: 576px) {
   .flowers_card {
     margin-bottom: 30px;
@@ -512,6 +574,7 @@ a.repeat:hover {
 .flowers_name_container {
   height: 9vh;
 }
+
 @media screen and (max-width: 768px) {
   .flowers_name_container {
     height: 10vh;
@@ -574,77 +637,81 @@ a.repeat:hover {
   height: 170px;
   color: black;
   padding-top: 30px;
-  /*display: flex;
-  flex-direction: row;*/
   font-family: "Prata", normal;
   font-size: larger;
-  /*&__logo,
-  &__menu,
-  &__contact,
-  &__social
-   {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-self: center;
-    height: 100%;
-    background: $background-color;
-    padding-top: 20px;
-  } */
 }
+
 .footer__logo {
   grid-column: 1/2;
 }
+
 .footer__menu {
   grid-column: 2/3;
 }
+
 .footer__contact {
   grid-column: 3/4;
 }
+
 .footer__v-korzinu {
   grid-column: 5/6;
   align-self: start;
   text-decoration: underline;
 }
+
 .footer__social {
   grid-column: 4/5;
 }
+
 .footer a:hover {
   background: #ff3672;
   text-decoration: none;
 }
+
 .footer__logo_img {
   width: 100px;
   margin-left: 60px;
   margin-top: 10px;
 }
+
 .footer__logo-name {
   font-family: "Pacifico", cursive;
   font-size: normal;
   color: #0093a2;
   margin-left: 30px;
 }
-.footer__menu_name, .footer__menu_buketi, .footer__menu_korzini, .footer__menu_dostavka, .footer__menu_oplata, .footer__menu_rosi {
+
+.footer__menu_name,
+.footer__menu_buketi,
+.footer__menu_korzini,
+.footer__menu_dostavka,
+.footer__menu_oplata,
+.footer__menu_rosi {
   cursor: pointer;
 }
+
 .footer__social-img {
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
+
 .footer__social-img:hover {
   background: #ff3672;
 }
+
 @media screen and (max-width: 1088px) {
   .footer {
     font-size: 16px;
   }
+
   .footer__logo_img {
     width: 90px;
     margin-left: 40px;
     margin-top: 10px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .footer {
     grid-template-columns: 0.7fr 0.2fr 1.5fr 0.7fr 0.5fr;
@@ -653,15 +720,18 @@ a.repeat:hover {
     height: 150px;
     font-size: 16px;
   }
+
   .footer__menu {
     display: none;
   }
+
   .footer__logo_img {
     width: 90px;
     margin-left: 20px;
     margin-top: 10px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .footer {
     grid-template-columns: 0.7fr 0.2fr 1.5fr 0.7fr 0.5fr;
@@ -669,17 +739,22 @@ a.repeat:hover {
     height: 130px;
     font-size: small;
   }
+
   .footer__menu {
     display: none;
   }
+
   .footer__social-img {
     width: 20px;
     height: 20px;
     cursor: pointer;
   }
+
   .footer__logo_img {
     width: 60px;
     margin-left: 30px;
     margin-top: 10px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
